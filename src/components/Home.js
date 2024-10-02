@@ -1,6 +1,8 @@
 // src/components/Home.js
 import React from 'react';
 import './Home.css';
+import { Link } from 'react-router-dom';
+
 
 const Home = () => {
   return (
@@ -16,7 +18,7 @@ const Home = () => {
         </div>
 
         <div className="home-buttons">
-        <a href="PersonalPortfolio-Website/resume" className="btn">View Resume</a>  {/* No need to manually add basename here */}
+        <Link to="/resume" className="btn">View Resume</Link> 
         <a href="#projects" className="btn">View My Projects</a>
         </div>
 
