@@ -5,14 +5,14 @@ import Navbar from './components/Navbar';
 import Home from './components/Home';
 import About from './components/About';
 import Projects from './components/Projects';
-import Contact from './components/Contact';
 import WorkExperience from './components/WorkExperience';
-import Resume from './components/Resume';  // Import Resume component
+import Resume from './components/Resume';
+import Contact from './components/Contact';
 import './App.css';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/PersonalPortfolio-Website"> {/* Set basename to your GitHub repo folder */}
       <div className="App">
         <Navbar />
         <Routes>
@@ -20,7 +20,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/work-experience" element={<WorkExperience />} />
-          <Route path="/resume" element={<Resume />} />  {/* Route to Resume */}
+          <Route path="/resume" element={<Resume />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </div>

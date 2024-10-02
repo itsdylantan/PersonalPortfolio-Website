@@ -1,22 +1,22 @@
 /* src/App.css */
+
 html {
   scroll-behavior: smooth;
+  height: 100%; /* Ensure html takes the full height */
 }
 
 body {
   margin: 0;
+  padding: 0;
   font-family: 'Arial', sans-serif;
-  background-color: #f8f8f8;
+  background-color: #1c1c1e; /* Dark background */
+  height: 100%; /* Ensure body takes the full height */
+  color: #f5f5f7; /* Light text for contrast */
 }
 
 h1, h2, h3 {
   margin: 0;
 }
-/* src/App.css */
-html {
-  scroll-behavior: smooth;
-}
-
 
 ul {
   padding: 0;
@@ -35,4 +35,16 @@ a:hover {
 .App {
   text-align: center;
   margin: 0;
+  min-height: 100vh; /* Ensure the app takes up the full viewport height */
+  display: flex;
+  flex-direction: column; /* Makes sure content stacks vertically */
+}
+
+.projects-section {
+  flex-grow: 1; /* Makes the projects section fill available space */
+}
+
+/* Remove any potential footer space */
+footer {
+  display: none;
 }
