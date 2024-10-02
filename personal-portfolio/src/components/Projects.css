@@ -1,0 +1,37 @@
+/* src/components/Projects.css */
+.projects {
+    padding: 80px 20px;
+    background-color: #e6e6e6;
+  }
+  
+  .projects h2 {
+    text-align: center;
+    font-size: 32px;
+    color: #222;
+    font-weight: bold;
+  }
+  
+  .projects ul {
+    list-style-type: none;
+    padding: 0;
+    max-width: 800px;
+    margin: 40px auto;
+  }
+  
+  .projects ul li {
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .projects ul li h3 {
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .projects ul li p {
+    font-size: 16px;
+    color: #555;
+  }
+  
