@@ -1,35 +1,79 @@
 /* src/components/Navbar.css */
+
+/* Make the navbar sticky and full-width */
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #f8f8f8;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  max-width: 100vw;  /* Ensure navbar doesn't exceed the viewport width */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1c1c1e;  /* Dark grey background */
+  padding: 15px 40px;
+  z-index: 1000; /* Ensures navbar stays above content */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  overflow: hidden; /* Prevent content from overflowing */
+  box-sizing: border-box; /* Ensure padding is included in width calculation */
+}
+
+/* Adjusted logo styling to remove flex-grow */
+.navbar-logo {
+  font-size: 24px;
+  color: #f5f5f7; /* Light grey for contrast */
+  font-weight: bold;
+  transition: color 0.3s;
+  margin-right: auto; /* Align the logo to the left, pushing links to the right */
+}
+
+.navbar-logo:hover {
+  color: #ffffff; /* Lighter on hover */
+}
+
+/* Styling for the nav links */
+.navbar-links {
+  display: flex;
+  justify-content: flex-end; /* Align links to the right */
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  gap: 20px; /* Space between the links */
+}
+
+.navbar-links li {
+  white-space: nowrap; /* Prevent text wrapping within a single link */
+}
+
+.navbar-links li a {
+  text-decoration: none;
+  color: #f5f5f7; /* Light grey for nav links */
+  font-weight: 500;
+  font-size: 16px;
+  transition: color 0.3s;
+  padding: 10px 15px; /* Add padding to links for clickable area */
+}
+
+.navbar-links li a:hover {
+  color: #9e9e9e; /* Subtle light grey on hover */
+}
+
+/* Handle mobile responsiveness */
+@media (max-width: 768px) {
+  .navbar {
     padding: 10px 20px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
   }
-  
-  .navbar h1 {
-    font-size: 24px;
-    color: #333;
-    font-weight: bold;
+
+  .navbar-links {
+    flex-direction: column; /* Stack links vertically on smaller screens */
+    gap: 10px; /* Space between vertically stacked links */
   }
-  
-  .navbar ul {
-    display: flex;
-    list-style-type: none;
+
+  .navbar-links li a {
+    font-size: 18px;
+    padding: 10px; /* Increase touch target for smaller screens */
   }
-  
-  .navbar ul li {
-    margin: 0 15px;
-  }
-  
-  .navbar ul li a {
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-  }
-  
-  .navbar ul li a:hover {
-    color: #007bff; /* Subtle hover effect */
-  }
-  
+}
+
+body {
+  padding-top: 70px; /* Ensure the content doesn't go behind the navbar */
+}

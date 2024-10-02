@@ -6,8 +6,8 @@ import './Navbar.css';
 const Navbar = () => {
   return (
     <nav className="navbar">
-      <h1>Dylan Tan</h1>
-      <ul>
+      <h1 className="navbar-logo">Dylan Tan</h1>
+      <ul className="navbar-links">
         <li><Link to="/">Home</Link></li>
         <li><Link to="/about">About</Link></li>
         <li><Link to="/projects">Projects</Link></li>
