@@ -19,7 +19,8 @@ const Home = () => {
         </div>
 
         <div className="home-buttons">
-          <a href="/resume.pdf" className="btn" target="_blank" rel="noopener noreferrer">Download Resume</a>
+          {/* Link updated to point to the resume page */}
+          <a href="/resume" className="btn">View Resume</a>
           <a href="#projects" className="btn">View My Projects</a>
         </div>
 
