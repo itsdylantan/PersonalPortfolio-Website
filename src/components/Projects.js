@@ -40,6 +40,30 @@ const Projects = () => {
               Real-time stock market data engineering project using Apache Kafka and AWS to process and analyze streaming data for insightful analytics.
             </p>
           </div>
+
+          {/* New Project */}
+          <div className="project-card">
+            <h3>Predicting Core Body Temperature using Infrared Thermography</h3>
+            <p>Technologies: R, ggplot2, glmnet, bestglm</p>
+            <p>
+              Developed predictive models and created a formal report on predicting core body temperature using infrared thermography (IRT). Applied regression analysis techniques in R, utilizing Gaussian and Gamma family distributions to develop predictive models with high accuracy.
+            </p>
+            <p>
+              Employed variable selection methods such as Forward Selection, Backward Elimination, LASSO, and Ridge regression to optimize model performance. Conducted extensive data preprocessing, handled missing values, created dummy variables, and addressed multicollinearity by removing variables with high Variance Inflation Factors (VIFs).
+            </p>
+            <p>
+              Utilized ggplot2 for visualization and bestglm for subset selection, enhancing the reliability of the results.
+            </p>
+            {/* Adjusted link to the PDF file with basename */}
+            <a
+              href={`${process.env.PUBLIC_URL}/pred_core_temp_infrared_dylan_irfan.pdf`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="project-link"
+            >
+              View Project (PDF)
+            </a>
+          </div>
         </div>
       </div>
     </section>
