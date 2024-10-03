@@ -28,6 +28,12 @@ const Home = () => {
     <section className="home-section" id="home">
       <div className="home-content">
         <h1>Dylan Tan</h1>
+
+        {/* Small round image below Dylan Tan */}
+        <div className="home-image">
+          <img src={`${process.env.PUBLIC_URL}/50398319_00301_0201_Large.jpg`} alt="Dylan Tan" className="large-profile-pic" />
+        </div>
+
         <p className="subheading">Data Scientist | Software Developer</p>
         
         <div className="bio">
