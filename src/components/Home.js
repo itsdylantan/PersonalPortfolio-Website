@@ -9,7 +9,7 @@ const Home = () => {
     <section className="home-section" id="home">
       <div className="home-content">
         <h1>Dylan Tan</h1>
-        <p className="subheading">Data Scientist | Software Engineer | Innovator</p>
+        <p className="subheading">Data Scientist | Data Engineer | Software Developer</p>
         
         <div className="bio">
           <p>
@@ -19,7 +19,7 @@ const Home = () => {
 
         <div className="home-buttons">
         <Link to="/resume" className="btn">View Resume</Link> 
-        <a href="#projects" className="btn">View My Projects</a>
+
         </div>
 
         <div className="social-links">
