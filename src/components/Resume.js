@@ -6,7 +6,7 @@ const Resume = () => {
   return (
     <section className="resume-section">
       <div className="resume-content">
-        <h1>Dylan Tan</h1>
+        <h1>Resume</h1>
         <p>Phone: +1 (250) 864-1680 | Email: <a href="mailto:dylantan16@gmail.com">dylantan16@gmail.com</a> | GitHub: <a href="https://github.com/itsdylantan" target="_blank" rel="noopener noreferrer">https://github.com/itsdylantan</a></p>
         
         <h2>Summary</h2>
